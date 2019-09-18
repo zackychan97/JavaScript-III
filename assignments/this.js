@@ -64,3 +64,15 @@ console.log(`The best restaurant in Aberdeen, SD is hands down ${aberdeensBestRe
 // Principle 4
 
 // code example for Explicit Binding
+
+function me(){
+    console.log(`My name is ${this.firstName} ${this.lastName} and ${this.hobbies} are my favorite things to do.`)
+}
+
+let aboutMe = {
+    firstName: 'Zack',
+    lastName: 'Bumpous',
+    hobbies: '🖥 coding, 🕹 gaming, 📚 reading'
+}
+
+me.call(aboutMe);

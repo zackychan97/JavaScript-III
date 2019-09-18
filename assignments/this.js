@@ -17,11 +17,11 @@
 // code example for Window Binding
 
 function myFood(favFood){
-    console.log(`Hello I am Zack and my is ${favFood}`);
+    console.log(`Hello I am Zack and my favorite food is ${favFood}`);
     console.log(this);
 }
 
-myFood('tacos 🌮');
+myFood('tacos 🌮.');
 
 
 
@@ -31,6 +31,15 @@ myFood('tacos 🌮');
 
 // code example for Implicit Binding
 
+let myGames = {
+    game1: 'Call of Duty 🎮',
+    game2: 'World of Warcraft 🧙🏾‍',
+    games: function(){
+        console.log(`My two favorite games of all time are ${this.game1} and ${this.game2}.`);
+    }
+}
+
+myGames.games();
 
 
 
@@ -39,6 +48,18 @@ myFood('tacos 🌮');
 // Principle 3
 
 // code example for New Binding
+
+function FavoriteRestaurant(best){
+    this.restaurant = best;
+}
+
+let aberdeensBestRestaurant = new FavoriteRestaurant('The Brass Kettle 🍱 🍷.');
+
+console.log(`The best restaurant in Aberdeen, SD is hands down ${aberdeensBestRestaurant.restaurant}`);
+
+
+
+
 
 // Principle 4
 

@@ -55,8 +55,7 @@ function FavoriteRestaurant(best){
 
 let aberdeensBestRestaurant = new FavoriteRestaurant('The Brass Kettle 🍱 🍷.');
 
-console.log(`The best restaurant in Aberdeen, SD is hands down ${aberdeensBestRestaurant.restaurant}`);
-
+console.log(`The best restaurant in Aberdeen, SD is hands down ${this.restaurant}`);
 
 
 
